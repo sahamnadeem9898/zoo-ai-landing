@@ -167,8 +167,164 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Pricing Section */}
       <section className="py-24 bg-neutral-900/50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-xl text-neutral-400">
+              Choose the perfect plan for your team
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <div className="p-8 rounded-2xl bg-neutral-950 border border-neutral-800 hover:border-purple-500/50 transition-all">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">Starter</h3>
+                <p className="text-neutral-400">Perfect for individuals</p>
+              </div>
+
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-bold text-white">$29</span>
+                  <span className="text-neutral-400">/month</span>
+                </div>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Up to 100 operations/month</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>5 integrations</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Basic automation</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Email support</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Community access</span>
+                </li>
+              </ul>
+
+              <button className="w-full px-6 py-3 rounded-lg bg-white/5 hover:bg-white/10 text-white font-semibold transition-all border border-white/10">
+                Get Started
+              </button>
+            </div>
+
+            {/* Professional Plan - Featured */}
+            <div className="p-8 rounded-2xl bg-gradient-to-b from-purple-950/40 to-neutral-950 border-2 border-purple-500/50 shadow-lg shadow-purple-500/20 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="px-4 py-1 rounded-full bg-purple-600 text-white text-sm font-semibold">
+                  Most Popular
+                </span>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">Professional</h3>
+                <p className="text-neutral-400">For growing teams</p>
+              </div>
+
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-bold text-white">$99</span>
+                  <span className="text-neutral-400">/month</span>
+                </div>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Unlimited operations</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Unlimited integrations</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Advanced automation</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Priority support</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Real-time analytics</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Team collaboration</span>
+                </li>
+              </ul>
+
+              <button className="w-full px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-all shadow-lg shadow-purple-500/25">
+                Get Started
+              </button>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="p-8 rounded-2xl bg-neutral-950 border border-neutral-800 hover:border-purple-500/50 transition-all">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">Enterprise</h3>
+                <p className="text-neutral-400">For large organizations</p>
+              </div>
+
+              <div className="mb-8">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl font-bold text-white">Custom</span>
+                </div>
+                <p className="text-sm text-neutral-400 mt-2">Let's talk</p>
+              </div>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Everything in Professional</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Custom integrations</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Dedicated account manager</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>24/7 phone support</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>Custom SLA</span>
+                </li>
+                <li className="flex items-start gap-3 text-neutral-300">
+                  <span className="text-purple-400 mt-1">✓</span>
+                  <span>On-premise deployment</span>
+                </li>
+              </ul>
+
+              <button className="w-full px-6 py-3 rounded-lg bg-white/5 hover:bg-white/10 text-white font-semibold transition-all border border-white/10">
+                Contact Sales
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
