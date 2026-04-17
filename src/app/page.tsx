@@ -168,243 +168,178 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-32 bg-neutral-900/50 relative overflow-hidden">
-        {/* Background Glow Effect */}
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/5 via-transparent to-purple-900/5"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-500/5 rounded-full blur-3xl"></div>
+      <section className="py-32 bg-gradient-to-b from-neutral-950 via-neutral-900/50 to-neutral-950 relative overflow-hidden">
+        {/* Sophisticated Background Effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/10 via-transparent to-transparent"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyMzksNjksOTYsMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
 
         <div className="container mx-auto px-6 relative">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
-              <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
-              <span className="text-sm text-purple-300 font-medium">Flexible Pricing</span>
+          <div className="text-center mb-24">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-purple-500/10 via-purple-500/5 to-purple-500/10 border border-purple-500/20 backdrop-blur-sm mb-8 hover:border-purple-500/40 transition-all duration-500">
+              <span className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 animate-pulse shadow-lg shadow-purple-500/50"></span>
+              <span className="text-sm text-purple-300 font-semibold tracking-wide">Simple, Transparent Pricing</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+            <h2 className="text-6xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent leading-tight tracking-tight">
               Choose Your Plan
             </h2>
-            <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
-              Start free, scale as you grow. All plans include a 14-day trial with full access.
+            <p className="text-xl md:text-2xl text-neutral-400 max-w-3xl mx-auto leading-relaxed">
+              Start free, scale as you grow. All plans include a 14-day trial with full access to premium features.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
             {/* Starter Plan */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-purple-500/0 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-8 lg:p-10 rounded-3xl bg-neutral-950/80 backdrop-blur-sm border border-neutral-800 hover:border-purple-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 h-full flex flex-col">
-                <div className="mb-8">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 mb-6 group-hover:scale-110 transition-transform duration-500">
-                    <span className="text-3xl">🚀</span>
+            <div className="group relative transform transition-all duration-700 hover:-translate-y-2">
+              {/* Glassmorphic Card with Animated Border */}
+              <div className="absolute -inset-px bg-gradient-to-b from-neutral-700/50 via-neutral-800/30 to-neutral-700/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-sm"></div>
+              <div className="relative p-10 lg:p-12 rounded-3xl bg-gradient-to-b from-neutral-900/90 via-neutral-950/95 to-neutral-900/90 backdrop-blur-xl border border-neutral-800/50 group-hover:border-neutral-700/80 transition-all duration-700 shadow-2xl group-hover:shadow-neutral-900/50 h-full flex flex-col overflow-hidden">
+                {/* Animated gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                <div className="relative mb-8">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-700/50 mb-6 group-hover:scale-110 group-hover:border-purple-500/30 transition-all duration-700 shadow-lg">
+                    <span className="text-4xl">🚀</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Starter</h3>
-                  <p className="text-neutral-400">Perfect for individuals getting started</p>
+                  <h3 className="text-3xl font-bold text-white mb-3 tracking-tight">Starter</h3>
+                  <p className="text-neutral-400 text-lg">Perfect for individuals getting started</p>
                 </div>
 
-                <div className="mb-8">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-5xl lg:text-6xl font-bold bg-gradient-to-br from-white to-neutral-300 bg-clip-text text-transparent">$29</span>
-                    <span className="text-neutral-400 text-lg">/mo</span>
+                <div className="relative mb-10">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-6xl lg:text-7xl font-bold bg-gradient-to-br from-white via-neutral-100 to-neutral-300 bg-clip-text text-transparent tracking-tight">$29</span>
+                    <span className="text-neutral-500 text-xl font-medium">/mo</span>
                   </div>
-                  <p className="text-sm text-purple-400">Billed monthly</p>
+                  <p className="text-sm text-purple-400 font-medium">Billed monthly</p>
                 </div>
 
-                <ul className="space-y-4 mb-10 flex-grow">
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Up to 100 operations/month</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>5 integrations</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Basic automation workflows</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Email support</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Community access</span>
-                  </li>
+                <ul className="space-y-5 mb-12 flex-grow">
+                  {['Up to 100 operations/month', '5 integrations', 'Basic automation workflows', 'Email support', 'Community access'].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3.5 text-neutral-300 group/item">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 flex items-center justify-center flex-shrink-0 mt-0.5 border border-neutral-600/50 group-hover/item:border-purple-500/50 transition-all duration-300">
+                        <span className="text-neutral-400 text-xs font-bold">✓</span>
+                      </div>
+                      <span className="text-base leading-relaxed">{feature}</span>
+                    </li>
+                  ))}
                 </ul>
 
-                <button className="w-full px-6 py-4 rounded-xl bg-neutral-800/50 hover:bg-neutral-800 text-white font-semibold transition-all duration-300 border border-neutral-700 hover:border-neutral-600 group-hover:scale-105">
-                  Get Started
+                <button className="relative w-full px-6 py-4 rounded-xl bg-gradient-to-b from-neutral-800 to-neutral-900 hover:from-neutral-700 hover:to-neutral-800 text-white font-semibold text-base transition-all duration-500 border border-neutral-700 hover:border-neutral-600 shadow-lg hover:shadow-xl overflow-hidden group/btn">
+                  <span className="relative z-10">Get Started</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/10 to-purple-600/0 translate-x-full group-hover/btn:translate-x-0 transition-transform duration-700"></div>
                 </button>
               </div>
             </div>
 
-            {/* Professional Plan - Featured */}
-            <div className="group relative md:-mt-4 md:scale-105">
-              {/* Animated Gradient Border */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 rounded-3xl opacity-75 group-hover:opacity-100 blur-sm group-hover:blur-md transition-all duration-500 animate-pulse"></div>
+            {/* Professional Plan - Premium Featured */}
+            <div className="group relative md:-mt-8 transform transition-all duration-700 hover:-translate-y-3">
+              {/* Multi-layer Animated Glow */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 rounded-3xl opacity-60 group-hover:opacity-100 blur-xl transition-all duration-700 animate-pulse"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 rounded-3xl opacity-80 group-hover:opacity-100 blur transition-all duration-700"></div>
 
-              <div className="relative p-8 lg:p-10 rounded-3xl bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-900 h-full flex flex-col">
-                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-white text-sm font-bold shadow-lg shadow-purple-500/50 animate-pulse">
-                    ⭐ MOST POPULAR
+              <div className="relative p-10 lg:p-12 rounded-3xl bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-900 h-full flex flex-col overflow-hidden shadow-2xl shadow-purple-500/20 group-hover:shadow-purple-500/40">
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+
+                {/* Premium Badge */}
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
+                  <div className="relative px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 text-white text-sm font-bold shadow-2xl shadow-purple-500/50 border border-purple-400/30">
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-400/0 via-white/20 to-purple-400/0 animate-pulse rounded-full"></div>
+                    <span className="relative z-10 flex items-center gap-2">
+                      <span className="text-base">⭐</span>
+                      MOST POPULAR
+                    </span>
                   </div>
                 </div>
 
-                <div className="mb-8 mt-4">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 mb-6 shadow-lg shadow-purple-500/50 group-hover:scale-110 transition-transform duration-500">
-                    <span className="text-3xl">⚡</span>
+                <div className="relative mb-8 mt-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-purple-700 mb-6 shadow-2xl shadow-purple-500/50 group-hover:scale-110 group-hover:shadow-purple-500/70 transition-all duration-700 border border-purple-400/30">
+                    <span className="text-4xl drop-shadow-lg">⚡</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Professional</h3>
-                  <p className="text-neutral-400">For growing teams and businesses</p>
+                  <h3 className="text-3xl font-bold text-white mb-3 tracking-tight">Professional</h3>
+                  <p className="text-neutral-300 text-lg">For growing teams and businesses</p>
                 </div>
 
-                <div className="mb-8">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-5xl lg:text-6xl font-bold bg-gradient-to-br from-purple-200 via-white to-purple-200 bg-clip-text text-transparent">$99</span>
-                    <span className="text-neutral-400 text-lg">/mo</span>
+                <div className="relative mb-10">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-6xl lg:text-7xl font-bold bg-gradient-to-br from-white via-purple-100 to-purple-200 bg-clip-text text-transparent tracking-tight drop-shadow-2xl">$99</span>
+                    <span className="text-neutral-400 text-xl font-medium">/mo</span>
                   </div>
-                  <p className="text-sm text-purple-400">Billed monthly • Save 20% yearly</p>
+                  <p className="text-sm text-purple-300 font-semibold">Billed monthly • Save 20% yearly</p>
                 </div>
 
-                <ul className="space-y-4 mb-10 flex-grow">
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Unlimited operations</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Unlimited integrations</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Advanced AI automation</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Priority support (24/7)</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Real-time analytics dashboard</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">Team collaboration tools</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-200">
-                    <div className="w-5 h-5 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/30">
-                      <span className="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <span className="font-medium">API access</span>
-                  </li>
+                <ul className="space-y-5 mb-12 flex-grow">
+                  {['Unlimited operations', 'Unlimited integrations', 'Advanced AI automation', 'Priority support (24/7)', 'Real-time analytics dashboard', 'Team collaboration tools', 'API access'].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3.5 text-neutral-100 group/item">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-purple-500/40 border border-purple-400/30 group-hover/item:scale-110 transition-all duration-300">
+                        <span className="text-white text-xs font-bold drop-shadow">✓</span>
+                      </div>
+                      <span className="font-medium text-base leading-relaxed">{feature}</span>
+                    </li>
+                  ))}
                 </ul>
 
-                <button className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 hover:to-purple-400 text-white font-bold transition-all duration-300 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105">
-                  Start Free Trial
+                <button className="relative w-full px-6 py-5 rounded-xl bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 hover:from-purple-500 hover:via-purple-400 hover:to-purple-500 text-white font-bold text-base transition-all duration-500 shadow-2xl shadow-purple-500/40 hover:shadow-purple-500/60 overflow-hidden group/btn border border-purple-400/30">
+                  <span className="relative z-10 drop-shadow">Start Free Trial</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-full group-hover/btn:translate-x-0 transition-transform duration-700"></div>
                 </button>
               </div>
             </div>
 
             {/* Enterprise Plan */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-purple-500/0 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative p-8 lg:p-10 rounded-3xl bg-neutral-950/80 backdrop-blur-sm border border-neutral-800 hover:border-purple-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 h-full flex flex-col">
-                <div className="mb-8">
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/10 mb-6 group-hover:scale-110 transition-transform duration-500">
-                    <span className="text-3xl">🏢</span>
+            <div className="group relative transform transition-all duration-700 hover:-translate-y-2">
+              {/* Glassmorphic Card with Animated Border */}
+              <div className="absolute -inset-px bg-gradient-to-b from-neutral-700/50 via-neutral-800/30 to-neutral-700/50 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-sm"></div>
+              <div className="relative p-10 lg:p-12 rounded-3xl bg-gradient-to-b from-neutral-900/90 via-neutral-950/95 to-neutral-900/90 backdrop-blur-xl border border-neutral-800/50 group-hover:border-neutral-700/80 transition-all duration-700 shadow-2xl group-hover:shadow-neutral-900/50 h-full flex flex-col overflow-hidden">
+                {/* Animated gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                <div className="relative mb-8">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 border border-neutral-700/50 mb-6 group-hover:scale-110 group-hover:border-purple-500/30 transition-all duration-700 shadow-lg">
+                    <span className="text-4xl">🏢</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Enterprise</h3>
-                  <p className="text-neutral-400">For large-scale organizations</p>
+                  <h3 className="text-3xl font-bold text-white mb-3 tracking-tight">Enterprise</h3>
+                  <p className="text-neutral-400 text-lg">For large-scale organizations</p>
                 </div>
 
-                <div className="mb-8">
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-4xl lg:text-5xl font-bold bg-gradient-to-br from-white to-neutral-300 bg-clip-text text-transparent">Custom</span>
+                <div className="relative mb-10">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-5xl lg:text-6xl font-bold bg-gradient-to-br from-white via-neutral-100 to-neutral-300 bg-clip-text text-transparent tracking-tight">Custom</span>
                   </div>
-                  <p className="text-sm text-purple-400">Tailored to your needs</p>
+                  <p className="text-sm text-purple-400 font-medium">Tailored to your needs</p>
                 </div>
 
-                <ul className="space-y-4 mb-10 flex-grow">
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Everything in Professional</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Custom AI model training</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Dedicated account manager</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>White-label options</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>Custom SLA & compliance</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>On-premise deployment</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-neutral-300">
-                    <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-purple-400 text-xs">✓</span>
-                    </div>
-                    <span>SSO & advanced security</span>
-                  </li>
+                <ul className="space-y-5 mb-12 flex-grow">
+                  {['Everything in Professional', 'Custom AI model training', 'Dedicated account manager', 'White-label options', 'Custom SLA & compliance', 'On-premise deployment', 'SSO & advanced security'].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3.5 text-neutral-300 group/item">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 flex items-center justify-center flex-shrink-0 mt-0.5 border border-neutral-600/50 group-hover/item:border-purple-500/50 transition-all duration-300">
+                        <span className="text-neutral-400 text-xs font-bold">✓</span>
+                      </div>
+                      <span className="text-base leading-relaxed">{feature}</span>
+                    </li>
+                  ))}
                 </ul>
 
-                <button className="w-full px-6 py-4 rounded-xl bg-neutral-800/50 hover:bg-neutral-800 text-white font-semibold transition-all duration-300 border border-neutral-700 hover:border-neutral-600 group-hover:scale-105">
-                  Contact Sales
+                <button className="relative w-full px-6 py-4 rounded-xl bg-gradient-to-b from-neutral-800 to-neutral-900 hover:from-neutral-700 hover:to-neutral-800 text-white font-semibold text-base transition-all duration-500 border border-neutral-700 hover:border-neutral-600 shadow-lg hover:shadow-xl overflow-hidden group/btn">
+                  <span className="relative z-10">Contact Sales</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/10 to-purple-600/0 translate-x-full group-hover/btn:translate-x-0 transition-transform duration-700"></div>
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-20 text-center">
-            <p className="text-neutral-500 text-sm mb-6">Trusted by over 10,000+ teams worldwide</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-40">
-              <div className="text-neutral-600 font-bold text-lg">TECHCORP</div>
-              <div className="text-neutral-600 font-bold text-lg">STARTUPHUB</div>
-              <div className="text-neutral-600 font-bold text-lg">GROWTHLABS</div>
-              <div className="text-neutral-600 font-bold text-lg">INNOVATE CO</div>
+          {/* Enhanced Trust Indicators */}
+          <div className="mt-24 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900/50 border border-neutral-800/50 backdrop-blur-sm mb-8">
+              <span className="text-neutral-500 text-sm font-medium">Trusted by over 10,000+ teams worldwide</span>
+            </div>
+            <div className="flex flex-wrap justify-center items-center gap-12 opacity-30 hover:opacity-50 transition-opacity duration-500">
+              {['TECHCORP', 'STARTUPHUB', 'GROWTHLABS', 'INNOVATE CO'].map((company, i) => (
+                <div key={i} className="text-neutral-600 font-bold text-lg tracking-wider hover:text-neutral-500 transition-colors duration-300">
+                  {company}
+                </div>
+              ))}
             </div>
           </div>
         </div>
