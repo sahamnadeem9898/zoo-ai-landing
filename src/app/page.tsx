@@ -1,6 +1,30 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-neutral-950">
+      {/* Promotional Banner */}
+      <div className="relative bg-gradient-to-r from-purple-900 via-purple-700 to-purple-900 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-transparent to-purple-500/20 animate-pulse"></div>
+
+        <div className="container mx-auto px-6 py-4 relative">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shadow-lg shadow-green-400/50"></span>
+                <span className="text-xs font-bold text-white uppercase tracking-wider">New Launch</span>
+              </div>
+              <p className="text-white font-semibold text-sm md:text-base">
+                🎉 Zoo AI v2.0 is here! Experience 10x faster automation with our new AI engine.
+              </p>
+            </div>
+            <a href="#" className="group flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white hover:bg-neutral-100 text-purple-900 font-bold text-sm transition-all shadow-lg hover:shadow-xl whitespace-nowrap">
+              Try it Free
+              <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-purple-900/10"></div>
